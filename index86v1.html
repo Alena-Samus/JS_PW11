@@ -6,7 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Страница, к которой подключен jQuery</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    jQuery(document).ready(function () {
+      jQuery('td > img').mouseenter(function () {
+        jQuery(this).toggle();
+      });
+    });
+  </script>
 </head>
 <body align="center">
   <p>Это картинки в таблице!</p>
@@ -26,13 +32,5 @@
   <p>Это картинки без таблицы!</p>
   <img src="bye1.gif" alt="bye.gif" title="bye.gif">
   <img src="bye.gif" alt="bye.gif" title="bye.gif">
-
-  <script>
-    $(document).ready(function () {
-      $('td > img').mouseenter(function () {
-        $(this).toggle();
-      });
-    });
-  </script>
   
 </html>
