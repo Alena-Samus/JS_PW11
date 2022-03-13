@@ -8,17 +8,29 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
     $(document).ready(function () {
-      $('img').mouseenter(function () {
+      $('td > img').mouseenter(function () {
         $(this).toggle();
       });
     });
   </script>
 </head>
-<body>
-  <p>Это первая картинка!</p>
-  <img src="bye.gif" alt="bye.gif" title="bye.gif">
-  <p>Это вторая картинка!</p>
+<body align="center">
+  <p>Это картинки в таблице!</p>
+  <table align="center">
+    <tr>
+      <td><img src="bye.gif" alt="bye.gif" title="bye.gif"></td>
+      <td><img src="bye1.gif" alt="bye.gif" title="bye.gif"></td>
+      <td><img src="bye.gif" alt="bye.gif" title="bye.gif"></td>
+    </tr>
+    <tr>
+      <td><img src="bye1.gif" alt="bye.gif" title="bye.gif"></td>
+      <td><img src="bye.gif" alt="bye.gif" title="bye.gif"></td>
+      <td><img src="bye1.gif" alt="bye.gif" title="bye.gif"></td>
+    </tr>
+  </table>
+  
+  <p>Это картинки без таблицы!</p>
   <img src="bye1.gif" alt="bye.gif" title="bye.gif">
-  <p>Больше картинок нет!</p>
-</body>
+  <img src="bye.gif" alt="bye.gif" title="bye.gif">
+  
 </html>
